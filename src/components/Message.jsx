@@ -3,6 +3,7 @@ import DeleteButton from "./DeleteButton";
 import LikeButton from "./LikeButton";
 import EditMessage from "./EditMessage";
 import ReplyButton from "./ReplyButton";
+import DislikeButton from "./DislikeButton";
 
 export default function Message({ message, fetchMessages }) {
   // state determining whether the edit box displays or just the text
@@ -28,6 +29,7 @@ export default function Message({ message, fetchMessages }) {
       )}
       <div className="button-container">
         <LikeButton message={message} fetchMessages={fetchMessages} />
+        <DislikeButton message={message} fetchMessages={fetchMessages} />
         <DeleteButton message={message} fetchMessages={fetchMessages} />
         <ReplyButton message={message} fetchMessages={fetchMessages} />
       </div>

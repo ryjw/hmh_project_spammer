@@ -23,7 +23,7 @@ export default function EditMessage({ message, setIsEditing, fetchMessages }) {
   }
 
   return (
-    <form onSubmit={handleSubmitEdit}>
+    <form className="button-container" onSubmit={handleSubmitEdit}>
       <input
         type="text"
         onChange={(e) => setInput(e.target.value)}
