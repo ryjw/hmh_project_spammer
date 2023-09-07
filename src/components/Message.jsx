@@ -37,6 +37,12 @@ export default function Message({ message, fetchMessages }) {
       {message.children && message.children.length > 0 && (
         <Message message={message.children[0]} fetchMessages={fetchMessages} />
       )}
+      {message.children && message.children.length > 1 && (
+        <Message message={message.children[1]} fetchMessages={fetchMessages} />
+      )}
+      {message.children && message.children.length > 2 && (
+        <Message message={message.children[2]} fetchMessages={fetchMessages} />
+      )}
     </div>
   );
 }
