@@ -2,7 +2,7 @@ import { API } from "../API";
 
 export default function LikeButton({ message, fetchMessages }) {
   async function handleLike() {
-    await fetch(`${API}/message/${message.id}`, {
+    await fetch(`${API}/messages/${message.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

@@ -33,7 +33,8 @@ export default function Message({ message, fetchMessages }) {
         <DeleteButton message={message} fetchMessages={fetchMessages} />
         <ReplyButton message={message} fetchMessages={fetchMessages} />
       </div>
-      {message.children.length > 0 && (
+
+      {message.children && message.children.length > 0 && (
         <Message message={message.children[0]} fetchMessages={fetchMessages} />
       )}
     </div>

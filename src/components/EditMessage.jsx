@@ -8,7 +8,7 @@ export default function EditMessage({ message, setIsEditing, fetchMessages }) {
   // prevent default stops the page reloading on submit
   async function handleSubmitEdit(e) {
     e.preventDefault();
-    await fetch(`${API}/message/${message.id}`, {
+    await fetch(`${API}/messages/${message.id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

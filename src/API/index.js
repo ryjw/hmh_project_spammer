@@ -1,1 +1,1 @@
-export const API = "https://spammer-backend.onrender.com";
+export const API = "https://hmh-spammer-backend.onrender.com";
