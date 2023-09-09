@@ -22,6 +22,7 @@ export default function SortedMessages({ messages, fetchMessages }) {
         return (
           !msg.parentId && (
             <Message
+              key={msg.id}
               message={msg}
               sortedMessages={sortedMessages}
               fetchMessages={fetchMessages}
